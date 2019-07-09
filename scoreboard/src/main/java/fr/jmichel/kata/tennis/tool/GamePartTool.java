@@ -12,7 +12,7 @@ public class GamePartTool {
 
 	public static GamePart getNewGamePart(int numberOfPlayer) {
 		GamePart gamePart = new GamePart();
-		gamePart.setPlayersScore(new ArrayList<Player>());
+		gamePart.setPlayersScore(new ArrayList<>());
 		gamePart.setSetHistoric(new ArrayList<>());
 		gamePart.setDeuceActivated(false);
 
@@ -98,7 +98,7 @@ public class GamePartTool {
 	private static void winningCalculation(GamePart gamePart, int lastPlayerToScore) {
 		Player playerLastPlayerToScore = gamePart.getPlayersScore().get(lastPlayerToScore);
 		
-		List<Integer> playerWithScoreTo40 = new ArrayList<Integer>();
+		List<Integer> playerWithScoreTo40 = new ArrayList<>();
 		for (Player player : gamePart.getPlayersScore()) {
 			if ((player.getScore().get(player.getScore().size() - 1) >= ScorePoint.SCORE_40)) {
 				playerWithScoreTo40.add(player.getId());

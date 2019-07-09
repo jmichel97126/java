@@ -14,7 +14,7 @@ public class Player {
 
 	public Player(int id) {
 			this.id = id;
-			score = new ArrayList<Integer>();
+			score = new ArrayList<>();
 			score.add(ScorePoint.SCORE_0);
 			winner = false;
 	}

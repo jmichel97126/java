@@ -63,10 +63,10 @@ public class ApplicationTest {
 		assertNotNull(partie);
 		assertEquals(partie.getPlayersScore().size(), nombreDeJoueur);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 
 		// Test position des joueurs dans la liste
@@ -91,11 +91,11 @@ public class ApplicationTest {
 		setUp();
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 
@@ -119,12 +119,12 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -151,13 +151,13 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -184,14 +184,14 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -224,14 +224,14 @@ public class ApplicationTest {
 		// Ajout de 1 point pour le joueur 2
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -262,7 +262,7 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -270,7 +270,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -304,7 +304,7 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -313,7 +313,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -349,7 +349,7 @@ public class ApplicationTest {
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 		GamePartTool.addPointPlayer(partie, idPlayer2);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -359,7 +359,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -406,7 +406,7 @@ public class ApplicationTest {
 		// Ajout d'un point pour le joueur 1
 		GamePartTool.addPointPlayer(partie, idPlayer1);
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -417,7 +417,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_DEUCH);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -466,7 +466,7 @@ public class ApplicationTest {
 		// Test si le joueur 2 a gagné
 		assertEquals(true, partie.getPlayersScore().get(idPlayer2).isWinner());
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -477,7 +477,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_40);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
@@ -538,7 +538,7 @@ public class ApplicationTest {
 		// Test que le joueur 2 n'a pas gagné
 		assertEquals(false, partie.getPlayersScore().get(idPlayer2).isWinner());
 
-		scoreExpectedPlayer1 = new ArrayList<Integer>();
+		scoreExpectedPlayer1 = new ArrayList<>();
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_15);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_30);
@@ -551,7 +551,7 @@ public class ApplicationTest {
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_ADV);
 		scoreExpectedPlayer1.add(ScorePoint.SCORE_0);
 
-		scoreExpectedPlayer2 = new ArrayList<Integer>();
+		scoreExpectedPlayer2 = new ArrayList<>();
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
 		scoreExpectedPlayer2.add(ScorePoint.SCORE_0);
