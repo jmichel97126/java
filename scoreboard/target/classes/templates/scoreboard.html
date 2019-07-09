@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Scoreboard KATA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h3>Score Game</h3>
+		<p>
+			<a th:href="@{/scoreboard}">
+				<button type="button" class="btn btn-info btn-lg" id="btnRestart">Restart</button>
+			</a>
+		<p>
+
+			<label th:if="${gamePart.finish} == true"
+				th:text="'Player ' + ${gamePart.setHistoric.get(gamePart.setHistoric.size() - 1) +1} + ' win the game'"
+				style="color: red;"></label>
+		<div th:if="${gamePart.finish} == false">
+			<th:block th:each="player : ${gamePart.playersScore}">
+				<p>
+					<label th:text="'Player ' + ${player.id +1}"></label> <a
+						th:href="@{/scoreboard/addPoint(playerId=${player.id})}">
+						<button type="button" class="btn btn-info btn-lg">+1
+							point</button>
+					</a>
+				</p>
+			</th:block>
+		</div>
+
+		<p>
+		<table class="table" title="Game Score">
+			<tr class="p-3 mb-2 text-white bg-secondary">
+				<td />
+				<td>Start the game</td>
+				<th:block th:each="history : ${gamePart.setHistoric}">
+					<td><label
+						th:text="'SET ' + ${historyStat.index + 1} + ' : Player ' + ${history +1} + ' win 1 point'"></label></td>
+				</th:block>
+			</tr>
+
+			<th:block th:each="player : ${gamePart.playersScore}">
+				<tr class="p-4 bg-white text-primary">
+					<th><label th:text="'Player ' + ${player.id +1}"></label></th>
+					<th:block th:each="score : ${player.score}">
+							<td th:if="${score} != 50 and ${score} != 45">
+								<label th:text="${score}"></label>
+							</td>
+							<td th:if="${score} == 45">DEUCE</td>
+							<td th:if="${score} == 50">ADV</td>
+					</th:block>
+				</tr>
+			</th:block>
+		</table>
+	</div>
+</body>
+</html>
