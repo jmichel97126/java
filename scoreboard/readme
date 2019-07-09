@@ -1,0 +1,7 @@
+Ce projet a pour but de gérer le score des match de tennis
+C'est un projet Spring tool
+Il est conseillé d'utiliser Spring tool suite
+Pour démarrer le serveur de l'application, il faut lancer l'application avec Spring boot app
+
+L'url pour atteindre l'ihm est :http://localhost:8080/scoreboard
+ 
