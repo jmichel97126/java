@@ -31,10 +31,6 @@ public class Player {
 		return score;
 	}
 
-	public void setScore(List<Integer> score) {
-		this.score = score;
-	}
-
 	public boolean isWinner() {
 		return winner;
 	}
